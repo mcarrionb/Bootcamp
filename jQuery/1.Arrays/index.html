@@ -6,28 +6,35 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <div id="add-item">
-            <button>push</button>
-            <button>unshift</button>
-            <button>insert at</button>
-            <input type="number" name="" id="">
-        </div>
-        <div id="remove-item">
-            <button>pop</button>
-            <button>shift</button>
-            <button>remove at</button>
-            <input type="number" name="" id="">
-        </div>
-        <div class="result">
-            <span>[]</span>
+        <div class="add-remove-container">
+            <div id="add-item">
+                <p class="title">Add Item</p>
+                <button id="push-btn">push</button>
+                <button id="unshift-btn">unshift</button>
+                <button id="insert-at-btn">insert at</button>
+                <input type="number" value="0" name="" min="0" id="add-item-input">
+            </div>
+            <div id="remove-item">
+                <p class="title">Remove Item</p>
+                <button id="pop-btn">pop</button>
+                <button id="shift-btn">shift</button>
+                <button id="remove-at-btn">remove at</button>
+                <input type="number" name="" value="0" min="0" id="remove-item-input">
+            </div>
+            
+            <!-- Contenedor con el resultado -->
+            <div class="result-container">
+                <span id="result">[]</span>
+            </div>
         </div>
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="main.js"></script>
 </body>
 </html>
