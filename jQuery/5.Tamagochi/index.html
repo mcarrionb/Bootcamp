@@ -7,15 +7,76 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main-container">
-        <div class="container eat-container"></div>
-        <div class="container play-container"></div>
-        <div class="container fight-container"></div>
-        <div class="container sleep-container"></div>
-        <div class="player">Katin</div>
+        <div class="container eat-container">
+            <div class="icons-container">
+                <div class="icon-container">
+                    <i class="fa-solid fa-ice-cream"></i>            
+                </div>
+                <div class="icon-container">
+                    <i class="fa-solid fa-fish"></i>                
+                </div>
+                <div class="icon-container">
+                    <i class="fa-solid fa-drumstick-bite"></i>
+                </div>
+            </div>
+            <div id="food-bar">
+                <div></div>
+            </div>
+            <span>EAT</span>
+        </div>
+
+        <div class="container play-container">
+            <div class="icons-container">
+                <div class="icon-container">
+                    <i class="fa-solid fa-gamepad"></i>            
+                </div>
+                <div class="icon-container">
+                    <i class="fa-solid fa-music"></i>                
+                </div>
+                <div class="icon-container">
+                    <i class="fa-solid fa-volleyball"></i>
+                </div>
+            </div>
+            <div id="entertainment-bar">
+                <div></div>
+            </div>
+            <p>PLAY</p>
+        </div>
+
+        <div class="container fight-container">
+            <p>FIGHT</p>
+            <div class="icons"></div>
+            <div id="fight-bar">
+                <div></div>
+            </div>
+            
+        </div>
+
+        <div class="container sleep-container">
+            <p>SLEEP</p>
+            <div class="icons-container">
+                <div class="icon-container">
+                    <i class="fa-solid fa-bed"></i>            
+                </div>
+                <div class="icon-container">
+                    <i class="fa-solid fa-music"></i>                
+                </div>
+            </div>
+            <div id="sleep-bar">
+                <div></div>
+            </div>
+        </div>
+
+        <div class="player">
+            <span>Katin</span>
+            <img class="player-img" src="img/kitten.png" alt="">
+            
+        </div>
     </div>
 
     <script src="main.js"></script>

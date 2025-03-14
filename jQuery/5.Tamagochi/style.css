@@ -16,22 +16,74 @@ body{
     grid-template-rows: repeat(2, 1fr);
     font-family: "Ubuntu Mono", monospace;
 }
+.container{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 .eat-container{
     background-color: #b7fab7;
     grid-area: 1 / 1 / span 1 / span 1;
+    justify-content: flex-start;
 }
 .play-container{
     background-color: #f8f893;
     grid-area: 1 / 2 / span 1 / span 1;
+    justify-content: flex-start;
+    align-items: end;
 }
 .fight-container{
     background-color: #ff9999;
     grid-area: 2 / 1 / span 1 / span 1;
+    justify-content: flex-end;
 }
 .sleep-container{
     background-color: #84cae6;
     grid-area: 2 / 2 / span 1 / span 1;
+    justify-content: flex-end;
+    align-items: end;
 }
+
+/* Icons */
+.icons-container{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.icon-container{
+    background-color: white;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    padding: 8px;
+    text-align: center;
+}
+i{
+    font-size: 20px;
+}
+
+/* Barras */
+#food-bar,
+#entertainment-bar,
+#fight-bar,
+#sleep-bar{
+    background-color: black;
+    border-radius: 15px;
+    height: 10px;
+    padding: 4px;
+    width: 80%;
+}
+#food-bar div,
+#entertainment-bar div,
+#fight-bar div,
+#sleep-bar div{
+    background-color: white;
+    border-radius: 15px;
+    height: 10px;
+}
+
+/* Estilos contenedor del personaje */
 .player{
     position: absolute;
     top: 50%;
@@ -39,4 +91,12 @@ body{
     transform: translate(-50%, -50%);
     font-size: 1.4rem;
     font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.player-img{
+    width: 200px;
+}
+
