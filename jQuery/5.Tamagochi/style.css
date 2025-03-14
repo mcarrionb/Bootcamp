@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    height: 100vh;
+    /* background: conic-gradient(
+        #b7fab7 0% 25%, 
+        #f8f893 25% 50%, 
+        #ff9999 50% 75%, 
+        #84cae6 75% 100%
+    ); */
+}
+.main-container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    font-family: "Ubuntu Mono", monospace;
+}
+.eat-container{
+    background-color: #b7fab7;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+.play-container{
+    background-color: #f8f893;
+    grid-area: 1 / 2 / span 1 / span 1;
+}
+.fight-container{
+    background-color: #ff9999;
+    grid-area: 2 / 1 / span 1 / span 1;
+}
+.sleep-container{
+    background-color: #84cae6;
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+.player{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
