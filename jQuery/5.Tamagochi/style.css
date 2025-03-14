@@ -51,13 +51,17 @@ body{
     flex-direction: row;
     gap: 16px;
 }
-.icon-container{
+.icon-btn{
     background-color: white;
     border-radius: 50%;
     height: 20px;
     width: 20px;
     padding: 8px;
     text-align: center;
+    cursor: pointer;
+}
+.icon-btn:hover{
+    background-color: rgb(220, 220, 220);
 }
 i{
     font-size: 20px;
@@ -99,4 +103,13 @@ i{
 .player-img{
     width: 200px;
 }
-
+#health-bar{
+    background-color: black;
+    border-radius: 15px;
+    height: 10px;
+    padding: 4px;
+    width: 100%;
+}
+#health-bar div{
+    color: white;
+}
